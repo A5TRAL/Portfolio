@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns:mx="http://schemas.microsoft.com/appx/2013/xbox/manifest" IgnorableNamespaces="mx" xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+	<Identity Name="Team17.Overcooked2" Publisher="CN=Team17" Version="1.0.0.5" ProcessorArchitecture="x64"/>
+	<Properties>
+		<DisplayName>Overcooked! 2</DisplayName>
+		<PublisherDisplayName>Team17</PublisherDisplayName>
+		<Logo>PackageImages/StoreLogo.png</Logo>
+		<Description>Overcooked! 2 is a cooperative cooking game for 1-4 players</Description>
+	</Properties>
+	<Prerequisites>
+		<OSMinVersion>6.2</OSMinVersion>
+		<OSMaxVersionTested>6.2</OSMaxVersionTested>
+		<mx:ApplicationEnvironment>title</mx:ApplicationEnvironment>
+		<mx:OSName>era</mx:OSName>
+	</Prerequisites>
+	<Resources>
+		<Resource Language="en-us" />
+		<Resource Language="en-gb" />
+		<Resource Language="fr-fr" />
+		<Resource Language="it-it" />
+		<Resource Language="es-es" />
+		<Resource Language="de-de" />
+		<Resource Language="pl-pl" />
+		<Resource Language="zh-cn" />
+	</Resources>
+	<Applications>
+		<Application Id="App" Executable="Overcooked2.exe" EntryPoint="Overcooked2.app">
+			<VisualElements DisplayName="ms-resource:PackageTitle" Logo="PackageImages/Logo.png" SmallLogo="PackageImages/SmallLogo.png" Description="ms-resource:PackageDescription" ForegroundText="light" BackgroundColor="#464646">
+				<SplashScreen Image="PackageImages/SplashScreen.png" />
+				<DefaultTile WideLogo="PackageImages/WideLogo.png" />
+			</VisualElements>
+			<Extensions>
+				<mx:Extension Category="xbox.live">
+					<mx:XboxLive TitleId="1265B0E9" PrimaryServiceConfigId="d5040100-22ea-4540-9702-9d9f1265b0e9" />
+				</mx:Extension>
+				<mx:Extension Category="xbox.system.resources">
+					<mx:XboxSystemResources>
+						<mx:GpuAvailability>fixed</mx:GpuAvailability>
+						<mx:TitleMemory ConsoleType="Xbox_One_X" Size="6"/>
+					</mx:XboxSystemResources>
+				</mx:Extension>
+				<mx:Extension Category="windows.xbox.networking">
+					<mx:XboxNetworkingManifest>
+						<mx:SocketDescriptions>
+							<mx:SocketDescription Name="GamePlaySocket" SecureIpProtocol="Udp" BoundPort="4000">
+								<mx:AllowedUsages>
+									<mx:SecureDeviceSocketUsage Type="Initiate" />
+									<mx:SecureDeviceSocketUsage Type="Accept" />
+									<mx:SecureDeviceSocketUsage Type="SendGameData" />
+									<mx:SecureDeviceSocketUsage Type="ReceiveGameData" />
+									<mx:SecureDeviceSocketUsage Type="SendChat" />
+									<mx:SecureDeviceSocketUsage Type="ReceiveChat" />
+								</mx:AllowedUsages>
+							</mx:SocketDescription>
+							<mx:SocketDescription Name="UnetSocket" SecureIpProtocol="Udp" BoundPort="57344-65535">
+								<mx:AllowedUsages>
+									<mx:SecureDeviceSocketUsage Type="Initiate" />
+									<mx:SecureDeviceSocketUsage Type="Accept" />
+									<mx:SecureDeviceSocketUsage Type="SendGameData" />
+									<mx:SecureDeviceSocketUsage Type="ReceiveGameData" />
+									<mx:SecureDeviceSocketUsage Type="SendChat" />
+									<mx:SecureDeviceSocketUsage Type="ReceiveChat" />
+								</mx:AllowedUsages>
+							</mx:SocketDescription>
+						</mx:SocketDescriptions>
+						<mx:SecureDeviceAssociationTemplates>
+							<mx:SecureDeviceAssociationTemplate Name="GamePlayTemplate" InitiatorSocketDescription="GamePlaySocket" AcceptorSocketDescription="GamePlaySocket" MultiplayerSessionRequirement="Required">
+								<mx:AllowedUsages>
+									<mx:SecureDeviceAssociationUsage Type="InitiateFromMicrosoftConsole" />
+									<mx:SecureDeviceAssociationUsage Type="AcceptOnMicrosoftConsole" />
+								</mx:AllowedUsages>
+							</mx:SecureDeviceAssociationTemplate>
+							<mx:SecureDeviceAssociationTemplate Name="UNet" InitiatorSocketDescription="UnetSocket" AcceptorSocketDescription="UnetSocket" MultiplayerSessionRequirement="Required">
+								<mx:AllowedUsages>
+									<mx:SecureDeviceAssociationUsage Type="InitiateFromMicrosoftConsole" />
+									<mx:SecureDeviceAssociationUsage Type="AcceptOnMicrosoftConsole" />
+								</mx:AllowedUsages>
+							</mx:SecureDeviceAssociationTemplate>
+						</mx:SecureDeviceAssociationTemplates>
+					</mx:XboxNetworkingManifest>
+				</mx:Extension>
+			</Extensions>
+			<mx:Ratings Category="game">
+				<mx:Rating>ESRB:E</mx:Rating>
+				<mx:Rating>PEGI:3</mx:Rating>
+				<mx:Rating>PEGI-PT:4</mx:Rating>
+				<mx:Rating>COB-AU:G</mx:Rating>
+				<mx:Rating>OFLC-NZ:G</mx:Rating>
+				<mx:Rating>DJCTQ:L</mx:Rating>
+				<mx:Rating>CSRR:G</mx:Rating>
+				<mx:Rating>PCBP:0</mx:Rating>
+				<mx:Rating>USK:6</mx:Rating>
+			</mx:Ratings>
+		</Application>
+	</Applications>
+	<Capabilities>
+		<mx:Capability Name="kinectAudio" />
+		<mx:Capability Name="kinectGamechat" />
+		<Capability Name="internetClientServer" />
+	</Capabilities>
+	<Extensions>
+		<Extension Category="windows.activatableClass.inProcessServer">
+			<InProcessServer>
+				<Path>Microsoft.Xbox.Services.dll</Path>
+				<ActivatableClass ActivatableClassId="Microsoft.Xbox.Services.XboxLiveContext" ThreadingModel="both" />
+				<ActivatableClass ActivatableClassId="Microsoft.Xbox.Services.Configuration" ThreadingModel="both" />
+				<ActivatableClass ActivatableClassId="Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements" ThreadingModel="both" />
+				<ActivatableClass ActivatableClassId="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" ThreadingModel="both" />
+				<ActivatableClass ActivatableClassId="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession" ThreadingModel="both" />
+				<ActivatableClass ActivatableClassId="Microsoft.Xbox.Services.Matchmaking.CreateMatchTicketResponse" ThreadingModel="both" />
+				<ActivatableClass ActivatableClassId="Microsoft.Xbox.Services.Matchmaking.HopperStatisticsResponse" ThreadingModel="both" />
+				<ActivatableClass ActivatableClassId="Microsoft.Xbox.Services.Matchmaking.MatchTicketDetailsResponse" ThreadingModel="both" />
+				<ActivatableClass ActivatableClassId="Microsoft.Xbox.Services.Presence.PresenceData" ThreadingModel="both" />
+				<ActivatableClass ActivatableClassId="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata" ThreadingModel="both" />
+				<ActivatableClass ActivatableClassId="Microsoft.Xbox.Services.UserStatistics.RequestedStatistics" ThreadingModel="both" />
+				<ActivatableClass ActivatableClassId="Microsoft.Xbox.Services.Social.SocialGroupConstants" ThreadingModel="both" />
+			</InProcessServer>
+		</Extension>
+		<Extension Category="windows.activatableClass.inProcessServer">
+			<InProcessServer>
+				<Path>Microsoft.Xbox.GameChat.dll</Path>
+				<ActivatableClass ActivatableClassId="Microsoft.Xbox.GameChat.ChatManager" ThreadingModel="both" />
+			</InProcessServer>
+		</Extension>
+	</Extensions>
+</Package>

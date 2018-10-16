@@ -1,0 +1,162 @@
+fileFormatVersion: 2
+guid: 5deb3857a1975b64eb823a2ba58b2b71
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: bn_Bubble1
+    100002: bn_Bubble2
+    100004: bn_Bubble3
+    100006: bn_Bubble4
+    100008: bn_Bubble5
+    100010: bn_Bubble6
+    100012: bn_Root
+    100014: Bones
+    100016: CompositeStew
+    100018: CookedStew
+    100020: m_Bubble1
+    100022: m_Bubble1_0
+    100024: m_Bubble2
+    100026: m_Bubble2_0
+    100028: m_Bubble3
+    100030: m_Bubble3_0
+    100032: m_Bubble4
+    100034: m_Bubble4_0
+    100036: m_Bubble5
+    100038: m_Bubble5_0
+    100040: m_Bubble6
+    100042: m_Bubble6_0
+    100044: m_Surface
+    100046: m_Surface_0
+    100048: Mesh
+    100050: Soup
+    100052: //RootNode
+    400000: bn_Bubble1
+    400002: bn_Bubble2
+    400004: bn_Bubble3
+    400006: bn_Bubble4
+    400008: bn_Bubble5
+    400010: bn_Bubble6
+    400012: bn_Root
+    400014: Bones
+    400016: CompositeStew
+    400018: CookedStew
+    400020: m_Bubble1
+    400022: m_Bubble1_0
+    400024: m_Bubble2
+    400026: m_Bubble2_0
+    400028: m_Bubble3
+    400030: m_Bubble3_0
+    400032: m_Bubble4
+    400034: m_Bubble4_0
+    400036: m_Bubble5
+    400038: m_Bubble5_0
+    400040: m_Bubble6
+    400042: m_Bubble6_0
+    400044: m_Surface
+    400046: m_Surface_0
+    400048: Mesh
+    400050: Soup
+    400052: //RootNode
+    2100000: Brown_Bubble
+    2100002: Brown
+    4300000: m_Bubble1_0
+    4300002: m_Bubble2_0
+    4300004: m_Bubble3_0
+    4300006: m_Bubble4_0
+    4300008: m_Bubble5_0
+    4300010: m_Bubble6_0
+    4300012: m_Surface_0
+    7400000: Idle
+    7400002: SlowBoil
+    7400004: FastBoil
+    9500000: //RootNode
+    13700000: m_Bubble1_0
+    13700002: m_Bubble2_0
+    13700004: m_Bubble3_0
+    13700006: m_Bubble4_0
+    13700008: m_Bubble5_0
+    13700010: m_Bubble6_0
+    13700012: m_Surface_0
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
